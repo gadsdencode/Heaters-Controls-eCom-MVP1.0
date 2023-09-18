@@ -1,7 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '@tailwindcss/forms'
+import data from '../../public/data.json';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
+import CardProduct from '../components/products/cardProduct.tsx'
 ---
 
 <Layout title="Products">
@@ -63,6 +66,25 @@ import Header from '../components/Header.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+        <Card />
+        <ul role="list" class="link-card-grid">
+        <div class="link-card-grid">
+            {data.products.map(product => 
+              <div class="col-md-6 col-lg-3">
+                <CardProduct
+                  thumb_src = {product.thumb_src}
+                  thumb_alt = {product.thumb_alt}
+                  color = {product.color}
+                  colors = {product.colors}
+                  title = {product.title}
+                  description = {product.description}
+                  price = {product.price}
+                  position = "center"
+                />
+              </div>
+            )}        
+          </div>
+        </ul>
 		<script src="/src/js/vendors/alpinejs.min.js"></script>
 		<script src="/src/js/vendors/aos.js"></script>
 		<script src="/src/js/vendors/swiper-bundle.min.js"></script>
