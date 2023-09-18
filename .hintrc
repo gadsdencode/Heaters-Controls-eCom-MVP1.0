@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-ms-touch-action",
+          "-webkit-text-size-adjust",
+          "scrollbar-width"
+        ]
+      }
+    ]
+  }
+}

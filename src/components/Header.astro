@@ -1,0 +1,35 @@
+---
+import Logo from './Logo.astro';  // Assuming Logo is also an Astro component
+---
+
+<header class="absolute w-full z-30">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16 md:h-20">
+
+      <!-- Site branding -->
+      <div class="shrink-0 mr-4">
+        <Logo />
+      </div>
+
+      <!-- Desktop navigation -->
+      <nav class="flex grow">
+
+        <!-- Desktop sign in links -->
+        <ul class="flex grow justify-end flex-wrap items-center">
+          <li>
+            <a class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out" href="/about">About Us</a>
+          </li>
+          <li class="ml-6">
+            <a class="..." href="/products"> <!-- CSS classes truncated for brevity -->
+              <span class="relative inline-flex items-center">
+                Products <span class="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+</header>

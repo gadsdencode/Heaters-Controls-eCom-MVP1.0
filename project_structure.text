@@ -1,0 +1,63 @@
+- .gitignore
+- .hintrc
+- astro.config.mjs
+- package.json
+- pnpm-lock.yaml
+- project_structure.text
+- public
+  - favicon.svg
+  - images
+    - auth-illustration.svg
+    - carousel-icon-01.svg
+    - carousel-icon-02.svg
+    - carousel-icon-03.svg
+    - carousel-icon-04.svg
+    - carousel-icon-05.svg
+    - client-01.svg
+    - client-02.svg
+    - client-03.svg
+    - client-04.svg
+    - client-05.svg
+    - client-06.svg
+    - client-07.svg
+    - client-08.svg
+    - client-09.svg
+    - feature-image-01.png
+    - feature-image-02.png
+    - feature-image-03.png
+    - feature-image-04.png
+    - glow-bottom.svg
+    - glow-top.svg
+    - logo.svg
+    - testimonial-01.jpg
+    - testimonial-02.jpg
+    - testimonial-03.jpg
+- README.md
+- src
+  - components
+    - Card.astro
+    - Header.astro
+    - Logo.astro
+  - css
+    - additional-styles
+      - custom-fonts.css
+      - theme.css
+      - utility-patterns.css
+    - style.css
+    - vendors
+      - aos.css
+      - swiper-bundle.min.css
+  - env.d.ts
+  - js
+    - main.js
+    - vendors
+      - alpinejs.min.js
+      - aos.js
+      - swiper-bundle.min.js
+  - layouts
+    - Layout.astro
+  - pages
+    - index.astro
+- style.css
+- tailwind.config.cjs
+- tsconfig.json

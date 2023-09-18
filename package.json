@@ -1,15 +1,27 @@
 {
   "name": "oss-ecommerce-v2",
   "type": "module",
+  "description": "Stellar HTML template - Cruip.com",
   "version": "0.0.1",
+  "homepage": "https://cruip.com",
+  "author": "Pasquale Vitiello",
+  "license": "https://cruip.com/terms/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "stellar-dev": "npx tailwindcss -i ./css/style.css -o ./style.css --watch",
+    "stellar-build": "npx tailwindcss -i ./css/style.css -o ./style.css"
   },
   "dependencies": {
-    "astro": "^3.1.0"
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.1.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "@types/node": "^20.6.2"
   }
 }
