@@ -1,11 +1,13 @@
 import React, { type JSXElementConstructor } from 'react';
 
 interface Props {
-  data: Map<string, string>
+  data: Map<string, string>,
+  uniqueId: string
 }
 
 export default function ProductAccordion({
-  data
+  data,
+  uniqueId
 }: Props) {
 
   const accordion: JSX.Element[] = Object.entries(data).map(([title, value], i) => {
