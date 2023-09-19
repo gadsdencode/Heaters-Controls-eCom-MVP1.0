@@ -1,4 +1,4 @@
-import React from "react";
+import '@astrojs/react'
 
 interface Props {
   rating: number;

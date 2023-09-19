@@ -1,6 +1,6 @@
 import '@astrojs/react'
 import ProductBadge from './productBadge.tsx';
-import ProductRating from '../reviews/reviewRating.tsx';
+import ProductRating from '../products/productRating.tsx';
 import ProductAccordion from './productAccordion.tsx';
 import ProductImages from './productImages.tsx';
 
