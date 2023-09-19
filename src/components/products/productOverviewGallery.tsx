@@ -70,7 +70,7 @@ export default function productOverviewGallery({
                 <i id="heart1" className="far fa-heart text-2xl"></i>
               </a>
             </div>
-            <ProductAccordion data={data} key={''} />
+            <ProductAccordion data={data} uniqueId={'productOverview'} />
           </div>
         </div>
       </div>
