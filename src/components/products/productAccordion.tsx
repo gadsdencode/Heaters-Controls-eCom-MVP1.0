@@ -50,3 +50,12 @@ export default function ProductAccordion({
       );
     }
   });
+
+  return (
+    <>
+      <div className="accordion mt-5" id="accordionEcommerce">
+        {accordion}
+      </div>
+    </>
+  );
+}

@@ -1,4 +1,5 @@
-import React from "react";
+import '@astrojs/react'
+import type { JSX } from "react/jsx-runtime";
 
 interface Props {
   images: ({
@@ -13,7 +14,7 @@ export default function ProductAccordion({
   data
 }: Props) {
 
-  const tabs = [];
+  const tabs: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | (JSX.Element | undefined)[] | null | undefined = [];
   let i = 0;
 
   Object.entries(data).map(([title,value],i) => {    
