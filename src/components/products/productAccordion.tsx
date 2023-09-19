@@ -13,7 +13,7 @@ export default function ProductAccordion({
   const accordion: JSX.Element[] = Object.entries(data).map(([title, value], i) => {
     const id = uniqueId + "heading" + i;
     const target = "#" + uniqueId + "collapse" + i;
-
+  
     if (i !== 0) {
       return (
         <div className="accordion-item" key={i}>
@@ -50,12 +50,3 @@ export default function ProductAccordion({
       );
     }
   });
-
-  return (
-    <>
-      <div className="accordion mt-5" id="accordionEcommerce">
-        {accordion}
-      </div>
-    </>
-  );
-}
