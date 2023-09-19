@@ -1,4 +1,4 @@
-import React from 'react';
+import '@astrojs/react'
 import ProductBadge from './productBadge.tsx';
 import ProductRating from '../reviews/reviewRating.tsx';
 import ProductAccordion from './productAccordion.tsx';
@@ -70,7 +70,7 @@ export default function productOverviewGallery({
                 <i id="heart1" className="far fa-heart text-2xl"></i>
               </a>
             </div>
-            <ProductAccordion data={data} />
+            <ProductAccordion data={data} key={''} />
           </div>
         </div>
       </div>
