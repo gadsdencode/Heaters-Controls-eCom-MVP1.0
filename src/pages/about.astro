@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import ProductAccordion from '../components/products/productAccordion.tsx';
 ---
 
 <Layout title="About Us">
@@ -8,6 +9,7 @@ import Header from '../components/Header.astro';
   <main>
     <h1 class="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out">About Us</h1>
     <h1><span class="text-gradient">Heaters & Controls</span></h1>
+    <ProductAccordion uniqueId="aboutPage" data={new Map([["Key1", "Value1"], ["Key2", "Value2"]])} />
   </main>
 </Layout>
 
